@@ -1,5 +1,6 @@
-<h1><center>Create new article</center></h1>
-	<% if @article.errors.any? %>
+<H1> Edit existing article</H1>
+
+<% if @article.errors.any? %>
 	<h2>The Following errors prevented the article from being created</h2>
 		<ul>
 			<% @article.errors.full_messages.each do |msg| %>
@@ -24,6 +25,5 @@
 			<%= f.submit %>
 		</p>
 
-			<% end %>
-			<%= link_to 'Edit this article', edit_article_path(@article) %>
-			<%= link_to 'Return to artcles', articles_path %>
+		<% end %>
+		<%= link_to 'Return to artcles', articles_path %>
