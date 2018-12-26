@@ -4,7 +4,7 @@
 	<div class="col-xs-12">
 		<%= form_for @user, :html => {class: "form-horizontal", role: "form"} do |f|%>
 		<div class="form-group">
-			<div class="control-label col-sm-2 col">
+			<div class="control-label col-sm-4">
 				<%= f.label :username %>
 			</div>
 			<div class="col-sm-8">
@@ -13,7 +13,7 @@
 		</div>
 
 		<div class="form-group">
-			<div class="control-label col-sm-2">
+			<div class="control-label col-sm-4">
 				<br><%= f.label :email %>
 			</div>
 			<div class="col-sm-8">
@@ -22,7 +22,7 @@
 		</div>
 
 		<div class="form-group">
-			<div class="control-label col-sm-2">
+			<div class="control-label col-sm-4">
 				<br><%= f.label :password %>
 			</div>
 			<div class="col-sm-8">

@@ -22,6 +22,11 @@ $navbar-default-bg: black;
 	text-align: center;
 }
 
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+
 .jumbotron {
 	background-image: asset-url('hallway.jpg');
 	background-size: cover;
