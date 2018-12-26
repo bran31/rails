@@ -18,14 +18,14 @@ $navbar-default-bg: black;
 
 }
 
+
+
+
 .center {
 	text-align: center;
 }
 
-.flex-row {
-  display: flex;
-  justify-content: center;
-}
+
 
 .jumbotron {
 	background-image: asset-url('hallway.jpg');
@@ -49,8 +49,11 @@ $navbar-default-bg: black;
 }
 
 body {
-	background-color: #2de0d2
-;
+	background-color: #2de0d2;
+
+}
+.usr-box {
+	padding-top: 25px;
 }
 
 .btn-xtralarge {
