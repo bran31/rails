@@ -2,7 +2,7 @@
     <%= form_for :session, :html => {class: "form-horizontal", role: "form"},url: login_path do |f|%>
 		<div class="form-group">
 			<div class="control-label col-sm-2 col">
-				<%= f.label :email %>
+				<%= f.label :email %>:
 			</div>
 			<div class="col-sm-8">
 				<%= f.email_field :email, class: "form-control", placeholder: "Enter Enter Email", autofocus: true %>
@@ -11,7 +11,7 @@
 
 		<div class="form-group">
 			<div class="control-label col-sm-2">
-				<br><%= f.label :password %>
+				<%= f.label :password %>:
 			</div>
 			<div class="col-sm-8">
 				<%= f.password_field :password, class: "form-control", placeholder: "Enter Password", autocomplete: "off" %>
