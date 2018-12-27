@@ -42,16 +42,19 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Profile <span class="caret"></span></a>
           <ul class="dropdown-menu">
             
+              <li><%= "Admin" if current_user.admin? %></li>
               <li><%= link_to "Edit your profile", edit_user_path(current_user) %></li>
               
               <li><%= link_to "View your profile", user_path(current_user)  %></li>
               <li role="separator" class="divider"></li>
               <li><%= link_to 'Log out', logout_path, method: :delete %></li>
+              
             <% else %>
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign Up <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><%= link_to "Register", signup_path%></li>
               <li><%= link_to 'Log In', login_path %></li>
+
             <% end %>
           </ul>
         </li>
